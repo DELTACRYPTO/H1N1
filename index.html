@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1N1 Factory</title>
+    <!-- Lien vers Google Fonts pour Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Lien vers AOS (animations de défilement) -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Bannière en haut -->
+    <header class="top-banner" data-aos="fade-down">
+        <h1>Welcome to the H1N1 Factory</h1>
+        <p class="quote">"Our heads are round so our thoughts can change direction" - Francis Picabia</p>
+    </header>
+
+    <!-- Contenu principal centré -->
+    <div class="center-content">
+        <div class="container" data-aos="fade-up">
+            <p class="description">Discover our exclusive product and take advantage of an exceptional offer!</p>
+            <h2 class="cta-text"><span>Buy $H1N1</span></h2>
+            <!-- Lien vers l'achat sur Ink -->
+            <a href="https://inkypump.com/trade/0xf2DEe16f4b18fA12D0F58a084D4449eb70db74bb" class="cta-button" target="_blank">Achetez sur Ink</a>
+            <div class="subtitle">ERC-20 token on Ink chain</div>
+        </div>
+
+        <!-- Bouton pour suivre le compte officiel X -->
+        <div class="social-buttons">
+            <a href="https://x.com/Delta_Crypto_" target="_blank" class="social-button">Follow the Official X Account For Updates</a>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+    </footer>
+
+    <!-- Musique de fond -->
+    <audio id="background-music" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener('click', function() {
+            document.getElementById('background-music').play();
+        }, { once: true });
+    </script>
+
+    <!-- Script pour activer les animations AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
